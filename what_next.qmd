@@ -4,4 +4,4 @@ format: html
 editor: visual
 ---
 
-All here is open. You don't like the model parametrization? Code a better one. Let us know in an [issue](https://github.com/ibartomeus/CropPollinationModels/issues) or directly make a pull request.
+All here is open. You don't like the model parametrization? Code a better one. Let us know in an [issue](https://github.com/ibartomeus/EUPollinationMetaweb/issues) or directly make a pull request.
