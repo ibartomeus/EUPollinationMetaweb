@@ -1,3 +1,3 @@
-# Version History of "this Generic Punk Repo"
+# Version History of the "Plant-Pollination European Metaweb"
 
-* version `0.0.1`: First version minimally functional (0000-00-00)
+* version `0.1`: First version not functional just to have a DOI (2023-06-01)
