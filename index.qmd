@@ -1,5 +1,5 @@
 ---
-title: "Punk Title Here"
+title: "The Plant-Pollinator European Metaweb"
 format: html
 editor: visual
 editor_options: 
@@ -7,34 +7,36 @@ editor_options:
 ---
 
 ```{r load_things, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-library(gh) #How heavy would this library be?
+library(gh) 
 
-releases <- gh("GET /repos/PunkUserName/PunkRepoName/releases",
-   owner = "PunkUserName",
-   repo = "PunkRepoName")
+releases <- gh("GET /repos/ibartomeus/EUPollinationMetaweb/releases",
+   owner = "ibartomeus",
+   repo = "EUPollinationMetaweb")
 tag <- releases[[1]][["tag_name"]]
 ```
 
 ## Authors
 
-Punk Author ^1^, ...
+Ignasi Bartomeus ^1^, Jose Lanuza^1,2^, Nerea Montes^1^, Ahlam Sentil^3^, ..., Denis^3^ Michez.
 
-> (1) Does Punks care about their institutions?
+> (1) EBD-CSIC
+> (2) iDiv
+> (3) University of Mons
 
 **Last update:** `r Sys.Date()`
 
 ## Abstract
 
-Tell me why I need to read this, and do it fast. Also, this document is is version `r tag`.
+Plant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community. This repository will grow as more interactions are added. This is is version `r tag`.
 
 ### How to cite this:
 
-You can cite this dynamic document: P. Author. `r substr(Sys.Date(), 1, 4)` Punk Title. version `r tag`. DOI: [10.0000/zenodo.0000000](https://doi.org/10.0000/zenodo.0000000).
+You can cite this dynamic document: I.Bartomeus et al. `r substr(Sys.Date(), 1, 4)` The Plant-Pollinator European Metaweb. version `r tag`. DOI: [10.5281/zenodo.8250261](https://doi.org/10.5281/zenodo.8250261).
 
 ### Download in PDF:
 
-<https://PunkUserName.github.io/PunkRepoName/REPORT.pdf>
+<https://ibartomeus.github.io/EUPollinationMetaweb/REPORT.pdf>
 
 ### Source code:
 
-You can find the source code, as well as previous releases of this repositoty at: <https://github.com/PunkUserName/PunkRepoName>
+You can find the source code, as well as previous releases of this repositoty at: <https://ibartomeus.github.io/EUPollinationMetaweb/>

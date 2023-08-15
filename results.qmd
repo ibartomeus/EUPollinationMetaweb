@@ -1,5 +1,5 @@
 ---
-title: "Results"
+title: "Plant-pollinator European Metaweb"
 format: html
 editor: visual
 editor_options: 
@@ -8,9 +8,9 @@ editor_options:
 
 ```{r load_things, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # source the script to read and clean data
-source("scripts/read_data.R") 
+#source("scripts/prep_data.R") 
 #libraries
-library(lme4)
+
 ```
 
 ## Result One

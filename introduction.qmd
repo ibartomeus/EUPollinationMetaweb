@@ -4,4 +4,4 @@ format: html
 editor: visual
 ---
 
-Which topic are you talking about? What we already know about this topic? Which are the knowledge gaps? How the hell are you going to to fill them up?
+TBE: Plant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community.

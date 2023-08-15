@@ -6,8 +6,14 @@ editor: visual
 
 ## Data
 
-Show me the data.
+We compiled X datasets from X researchers of plant-pollinator networks.
 
-## Statistical analysis
+Furthermore, we added X interactions contained in species ocurrences, mostly deposited in museums.
 
-You'd better make them reproducible.
+Add data from Globi? Crops?
+
+If you know of more sources that can be added, let us know.
+
+## Analysis
+
+We compiled everything and visualized\...

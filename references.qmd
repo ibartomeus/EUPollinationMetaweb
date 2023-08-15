@@ -4,4 +4,4 @@ format: html
 editor: visual
 ---
 
-So far this is a manual process. Using a reference manager is over rated.
+TBA
