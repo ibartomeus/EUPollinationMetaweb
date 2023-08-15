@@ -6,7 +6,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r load_things, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r load_scripts, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # source the script to read and clean data
 #source("scripts/prep_data.R") 
 #libraries
