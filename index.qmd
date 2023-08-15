@@ -35,7 +35,7 @@ You can cite this dynamic document: I.Bartomeus et al. `r substr(Sys.Date(), 1, 
 
 ### Download in PDF:
 
-<https://ibartomeus.github.io/EUPollinationMetaweb/REPORT.pdf>
+<https://ibartomeus.github.io/EUPollinationMetaweb/Report.pdf>
 
 ### Source code:
 
