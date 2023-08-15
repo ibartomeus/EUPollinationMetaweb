@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "News.html",
+    "href": "News.html",
+    "title": "Version History of the “Plant-Pollination European Metaweb”",
+    "section": "",
+    "text": "Version History of the “Plant-Pollination European Metaweb”\n\nversion 0.1: First version not functional just to have a DOI (2023-06-01)"
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "TBE: Plant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community."
+  },
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Plant-pollinator European Metaweb",
+    "section": "",
+    "text": "With R code"
+  },
+  {
+    "objectID": "results.html#result-one",
+    "href": "results.html#result-one",
+    "title": "Plant-pollinator European Metaweb",
+    "section": "",
+    "text": "With R code"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "",
+    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-08-15"
+  },
+  {
+    "objectID": "index.html#authors",
+    "href": "index.html#authors",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "",
+    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-08-15"
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "Abstract",
+    "text": "Abstract\nPlant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community. This repository will grow as more interactions are added. This is is version v0.1.\n\nHow to cite this:\nYou can cite this dynamic document: I.Bartomeus et al. 2023 The Plant-Pollinator European Metaweb. version v0.1. DOI: 10.5281/zenodo.8250261.\n\n\nDownload in PDF:\nhttps://ibartomeus.github.io/EUPollinationMetaweb/REPORT.pdf\n\n\nSource code:\nYou can find the source code, as well as previous releases of this repositoty at: https://ibartomeus.github.io/EUPollinationMetaweb/"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "TBA"
+  },
+  {
+    "objectID": "what_next.html",
+    "href": "what_next.html",
+    "title": "What next?",
+    "section": "",
+    "text": "All here is open. You don’t like the model parametrization? Code a better one. Let us know in an issue or directly make a pull request."
+  },
+  {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "Methods",
+    "section": "",
+    "text": "We compiled X datasets from X researchers of plant-pollinator networks.\nFurthermore, we added X interactions contained in species ocurrences, mostly deposited in museums.\nAdd data from Globi? Crops?\nIf you know of more sources that can be added, let us know."
+  },
+  {
+    "objectID": "methods.html#data",
+    "href": "methods.html#data",
+    "title": "Methods",
+    "section": "",
+    "text": "We compiled X datasets from X researchers of plant-pollinator networks.\nFurthermore, we added X interactions contained in species ocurrences, mostly deposited in museums.\nAdd data from Globi? Crops?\nIf you know of more sources that can be added, let us know."
+  },
+  {
+    "objectID": "methods.html#analysis",
+    "href": "methods.html#analysis",
+    "title": "Methods",
+    "section": "Analysis",
+    "text": "Analysis\nWe compiled everything and visualized..."
+  }
+]
