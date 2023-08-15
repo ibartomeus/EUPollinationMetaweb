@@ -1,7 +1,8 @@
-[![DOI](https://zenodo.org/badge/10.5281/zenodo.8250261.svg)](https://zenodo.org/badge/latestdoi/10.5281/zenodo.8250261)
+[![DOI](https://zenodo.org/badge/638541866.svg)](https://zenodo.org/badge/latestdoi/638541866)
+
 
 # The Plant-Pollinator European Metaweb
-**I. Bartomeus, J. Lanuza, N. Montes, A. Sentil, ..., D. Michez.
+**I. Bartomeus, J. Lanuza, N. Montes, A. Sentil, ..., D. Michez.**
 
 This repo hosts a Dynamic Paper depicting who interacts with whom in the pollinator european landscape. 
 
