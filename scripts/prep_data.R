@@ -61,7 +61,8 @@ for(k in 1:length(files)){
 master <- master[-1,]
 head(master)
 
-write.csv(master, file = "scripts/cleandata/data.csv")
+#comented for security
+#write.csv(master, file = "scripts/cleandata/data.csv")
 #nice.
 
 #check pollinator names...
@@ -76,7 +77,7 @@ devtools::install_github("RadicalCommEcol/CleanR", build_vignettes = TRUE)
 library(cleanR)
 
 #Go old school as devtools is not installing
-tesaurus <- read.csv(file = "scripts/cleandata/Master_bees_syrphids.csv")
+tesaurus <- read.csv(file = "scripts/temp_data/Master_bees_syrphids.csv")
 head(tesaurus)
 #check_sp <- function(template, Gen_sp, k = 2){ #if Gen_sp, we can add an if.
   #Gen_sp <- paste(trimws(Genus),
@@ -88,7 +89,7 @@ head(tesaurus)
   matching <- Gen_sp[which(Gen_sp %in% species_tesaurus$Gen_sp)]
   unmatching <- Gen_sp[which(!Gen_sp %in% species_tesaurus$Gen_sp)]
   mismatches <- unique(unmatching) #speed up the process
-  print(paste("the following species do not match:", mismatches))
+  #print(paste("the following species do not match:", mismatches))
   fixed <- c()
   #agrep is too lax, and I can't make it to work, adist is better
   #agrep(c("Coleoxys"), genus, value = TRUE, max = list(all = 2))
@@ -106,6 +107,7 @@ head(tesaurus)
   to_recover <- data.frame(mismatches, fixed, stringsAsFactors = FALSE)
   to_recover
 #}
+head(to_recover)
 to_recover[which(!is.na(to_recover$fixed)),]
 #need to go one by one, some ? removed,   
 #Osmia rufa                  Osmia nuda is wrong
@@ -121,6 +123,7 @@ unmatching <- clean_data$used_Gen_sp[which(!clean_data$used_Gen_sp %in% species_
 #this throws out a lot of good species e.g. with subspecies in it.
 clean_data2 <- clean_data[-which(clean_data$used_Gen_sp %in% unmatching),]
 clean_data2
+head(clean_data2)
 length(unique(clean_data2$used_Gen_sp)) #792 pollinators!
 
 #Can we plot it nicely?
