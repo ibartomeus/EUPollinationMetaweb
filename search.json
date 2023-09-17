@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "News.html",
-    "href": "News.html",
-    "title": "Version History of the “Plant-Pollination European Metaweb”",
+    "objectID": "what_next.html",
+    "href": "what_next.html",
+    "title": "What next?",
     "section": "",
-    "text": "Version History of the “Plant-Pollination European Metaweb”\n\nversion 0.1: First version not functional just to have a DOI (2023-06-01)"
+    "text": "All here is open. You don’t like the model parametrization? Code a better one. Let us know in an issue or directly make a pull request."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "TBA"
   },
   {
     "objectID": "introduction.html",
@@ -12,6 +19,62 @@
     "title": "Introduction",
     "section": "",
     "text": "TBE: Plant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "",
+    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-09-17"
+  },
+  {
+    "objectID": "index.html#authors",
+    "href": "index.html#authors",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "",
+    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-09-17"
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "The Plant-Pollinator European Metaweb",
+    "section": "Abstract",
+    "text": "Abstract\nPlant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community. This repository will grow as more interactions are added. This is is version v0.1.\n\nHow to cite this:\nYou can cite this dynamic document: I.Bartomeus et al. 2023 The Plant-Pollinator European Metaweb. version v0.1. DOI: 10.5281/zenodo.8250261.\n\n\nDownload in PDF:\nhttps://ibartomeus.github.io/EUPollinationMetaweb/Report.pdf\n\n\nSource code:\nYou can find the source code, as well as previous releases of this repositoty at: https://ibartomeus.github.io/EUPollinationMetaweb/"
+  },
+  {
+    "objectID": "News.html",
+    "href": "News.html",
+    "title": "Version History of the “Plant-Pollination European Metaweb”",
+    "section": "",
+    "text": "Version History of the “Plant-Pollination European Metaweb”\n\nversion 0.1: First version not functional just to have a DOI (2023-06-01)"
+  },
+  {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "Methods",
+    "section": "",
+    "text": "We extracted updated taxonomic information and distribution per European country form the following sources:\n\nBees and Butterflies: Reverte et al 2023 (https://resjournals.onlinelibrary.wiley.com/doi/10.1111/icad.12680)\nButerflies: Maes et al 2019 (https://link.springer.com/article/10.1007/s10841-019-00127-z) Data extracted from: https://www.gbif.org/dataset/f9af6ffd-febc-4626-b2e8-809b1c60fa01\nPlants: Govaerts et al. The World Checklist of Vascular Plants, a continuously updated resource for exploring global plant diversity. Sci Data 8, 215 (2021). (https://doi.org/10.1038/s41597-021-00997-6). Data Extracted April 2023 (Govaerts R (ed.). 2023. WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew. [WWW document] URL http://sftp.kew.org/pub/data-repositories/WCVP/ [accessed 20 April 2023].) For plants we filtered European taxa only. NOte that the country division is coarse for countries recently changing its borders. Hence, for plants assigned to e.g. former Yugoslavia, we assumed they are present in all countries emerging from it. This is not optimal, but the best we can do.\n\nThose are the primary taxon considered. Extinct and doubtful distributional data were removed. For plants a further cleaning can be done by plant family by subsetting only angiosperms, or families known to be insect pollinated.\nOther taxa of pollinator insects such as Bombilids (https://eunis.eea.europa.eu/species-taxonomic-browser.jsp?expand=46,648,699,2045,1172#level_1172 ; https://smujo.id/biodiv/article/view/3107; http://hbs.bishopmuseum.org/bombcat/bombcat2015.pdf) can be added if needed. Beetles, Wasps, and other Diptera are harder to track, as only a subset of those taxa are flower visitors. An approach would be to first see which families appear into the interactions database, and add those in the future. I think we should limit to diurnal pollinators as per data availability."
+  },
+  {
+    "objectID": "methods.html#taxonomy-and-distribution",
+    "href": "methods.html#taxonomy-and-distribution",
+    "title": "Methods",
+    "section": "",
+    "text": "We extracted updated taxonomic information and distribution per European country form the following sources:\n\nBees and Butterflies: Reverte et al 2023 (https://resjournals.onlinelibrary.wiley.com/doi/10.1111/icad.12680)\nButerflies: Maes et al 2019 (https://link.springer.com/article/10.1007/s10841-019-00127-z) Data extracted from: https://www.gbif.org/dataset/f9af6ffd-febc-4626-b2e8-809b1c60fa01\nPlants: Govaerts et al. The World Checklist of Vascular Plants, a continuously updated resource for exploring global plant diversity. Sci Data 8, 215 (2021). (https://doi.org/10.1038/s41597-021-00997-6). Data Extracted April 2023 (Govaerts R (ed.). 2023. WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew. [WWW document] URL http://sftp.kew.org/pub/data-repositories/WCVP/ [accessed 20 April 2023].) For plants we filtered European taxa only. NOte that the country division is coarse for countries recently changing its borders. Hence, for plants assigned to e.g. former Yugoslavia, we assumed they are present in all countries emerging from it. This is not optimal, but the best we can do.\n\nThose are the primary taxon considered. Extinct and doubtful distributional data were removed. For plants a further cleaning can be done by plant family by subsetting only angiosperms, or families known to be insect pollinated.\nOther taxa of pollinator insects such as Bombilids (https://eunis.eea.europa.eu/species-taxonomic-browser.jsp?expand=46,648,699,2045,1172#level_1172 ; https://smujo.id/biodiv/article/view/3107; http://hbs.bishopmuseum.org/bombcat/bombcat2015.pdf) can be added if needed. Beetles, Wasps, and other Diptera are harder to track, as only a subset of those taxa are flower visitors. An approach would be to first see which families appear into the interactions database, and add those in the future. I think we should limit to diurnal pollinators as per data availability."
+  },
+  {
+    "objectID": "methods.html#interaction-data",
+    "href": "methods.html#interaction-data",
+    "title": "Methods",
+    "section": "Interaction Data",
+    "text": "Interaction Data\nWe compiled X datasets from X researchers of plant-pollinator networks.\nFurthermore, we added X interactions contained in species occurrences, mostly deposited in museums.\nAdd data from Globi? Crops?\nIf you know of more sources that can be added, let us know."
+  },
+  {
+    "objectID": "methods.html#analysis",
+    "href": "methods.html#analysis",
+    "title": "Methods",
+    "section": "Analysis",
+    "text": "Analysis\nWe compiled everything and visualized...\nWe can even revisit % of plants in Europe that are inscte pollinated (or visited)."
   },
   {
     "objectID": "results.html",
@@ -26,61 +89,5 @@
     "title": "Plant-pollinator European Metaweb",
     "section": "",
     "text": "With R code"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Plant-Pollinator European Metaweb",
-    "section": "",
-    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-08-15"
-  },
-  {
-    "objectID": "index.html#authors",
-    "href": "index.html#authors",
-    "title": "The Plant-Pollinator European Metaweb",
-    "section": "",
-    "text": "Ignasi Bartomeus 1, Jose Lanuza1,2, Nerea Montes1, Ahlam Sentil3, …, Denis3 Michez.\n\n\nEBD-CSIC\niDiv\nUniversity of Mons\n\n\nLast update: 2023-08-15"
-  },
-  {
-    "objectID": "index.html#abstract",
-    "href": "index.html#abstract",
-    "title": "The Plant-Pollinator European Metaweb",
-    "section": "Abstract",
-    "text": "Abstract\nPlant and pollinators are connected by a beautiful and rich mutualistic web of interactions. This network of interactions has resulted pivotal to understand from plant reproductive biology to pollinators persistence. While initially though that plant-pollinator interactions where quite specialized, its diversity and generality has amazed ecologists. In fact, we barely started to document this diversity of existing interactions in space and time. With more than 3000 pollinators and XXXX plants in Europe, the potential number of links scales up to YYYYY. However, most of this potential links are expected never to be realized due to spatial, morphological or phenological constrains. This an attempt to document observed plant-pollinator interactions across Europe, highlight knowledge gaps and make the data available to the scientific community. This repository will grow as more interactions are added. This is is version v0.1.\n\nHow to cite this:\nYou can cite this dynamic document: I.Bartomeus et al. 2023 The Plant-Pollinator European Metaweb. version v0.1. DOI: 10.5281/zenodo.8250261.\n\n\nDownload in PDF:\nhttps://ibartomeus.github.io/EUPollinationMetaweb/REPORT.pdf\n\n\nSource code:\nYou can find the source code, as well as previous releases of this repositoty at: https://ibartomeus.github.io/EUPollinationMetaweb/"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "TBA"
-  },
-  {
-    "objectID": "what_next.html",
-    "href": "what_next.html",
-    "title": "What next?",
-    "section": "",
-    "text": "All here is open. You don’t like the model parametrization? Code a better one. Let us know in an issue or directly make a pull request."
-  },
-  {
-    "objectID": "methods.html",
-    "href": "methods.html",
-    "title": "Methods",
-    "section": "",
-    "text": "We compiled X datasets from X researchers of plant-pollinator networks.\nFurthermore, we added X interactions contained in species ocurrences, mostly deposited in museums.\nAdd data from Globi? Crops?\nIf you know of more sources that can be added, let us know."
-  },
-  {
-    "objectID": "methods.html#data",
-    "href": "methods.html#data",
-    "title": "Methods",
-    "section": "",
-    "text": "We compiled X datasets from X researchers of plant-pollinator networks.\nFurthermore, we added X interactions contained in species ocurrences, mostly deposited in museums.\nAdd data from Globi? Crops?\nIf you know of more sources that can be added, let us know."
-  },
-  {
-    "objectID": "methods.html#analysis",
-    "href": "methods.html#analysis",
-    "title": "Methods",
-    "section": "Analysis",
-    "text": "Analysis\nWe compiled everything and visualized..."
   }
 ]
