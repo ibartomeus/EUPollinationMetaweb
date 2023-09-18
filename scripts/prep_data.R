@@ -77,7 +77,8 @@ devtools::install_github("RadicalCommEcol/CleanR", build_vignettes = TRUE)
 library(cleanR)
 
 #Go old school as devtools is not installing
-tesaurus <- read.csv(file = "scripts/temp_data/Master_bees_syrphids.csv")
+#tesaurus <- read.csv(file = "scripts/temp_data/Master_bees_syrphids.csv")
+tesaurus <- readRDS(file = "scripts/cleandata/taxonomy.rds")
 head(tesaurus)
 #check_sp <- function(template, Gen_sp, k = 2){ #if Gen_sp, we can add an if.
   #Gen_sp <- paste(trimws(Genus),
@@ -109,22 +110,66 @@ head(tesaurus)
 #}
 head(to_recover)
 to_recover[which(!is.na(to_recover$fixed)),]
+
+# Clean by strings
+to_recover <- to_recover[!grepl("\\d", to_recover$mismatches),]
+to_recover <- to_recover[!grepl("\\_", to_recover$mismatches),]
+
+unwanted <- c("sp. ","sp.","sp", "spp.","spec. ","spec","sp_","spp"," dp"," ss",
+              "Unidentified",  "/", "P. ", "aff. ", "unknown",  "NA", "indet", "IMG") 
+# Vector of the patterns we want to delete: multiple variations of sp, / for the Bombus complex
+
+to_recoverunwanted <- to_recover %>% 
+  filter(str_detect(mismatches, str_c("(?i)\\b(", str_c(unwanted, collapse = "|"), ")\\b"))) 
+# Extract list of names with those patterns
+
+to_recoversp <- to_recover[!to_recover$mismatches %in% to_recoverunwanted$mismatches,] #leave only the wanted entries (no sp, spp, unidentified etc.)
+
+to_recoversp$wanted <- str_replace(to_recoversp$mismatches, "\\([^\\)]+\\)", "") # delete parenthesis of the string              
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\s+\\s", " ") # delete parenthesis of the string              
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "-type", "")
+
+dot <- "\\." #code to recognise the . as a real . in a string pattern 
+writeLines(dot) #code to recognise the . as a real . in a string pattern 
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\s+cf\\.", "") #to delete the cf. of the string
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\s+cf", "") #to delete the cf. of the string
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\.", " ") #delete parenthesis of the string              
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\s+gr", "") #to delete the cf. of the string
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "\\.agg\\.", "") #to delete the cf. of the string
+
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "[?]", "") #to delete the ? of the string
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "[?]", "") #to delete the ? of the string
+to_recoversp$wanted <- str_replace(to_recoversp$wanted, "[?]", "") #to delete the ? of the string
+# This is not pretty, each time you run it deletes one ?, so trhee lines for ???
+# There should be a better way to write it
+
+to_recoversp$wanted <- word(to_recoversp$wanted, 1, 2, sep = " ") #leave just the two first words of all entries
+
+to_recoversp$goodr_id <- ifelse(is.na(to_recoversp$fixed), to_recoversp$wanted,
+                                 to_recoversp$fixed)
+# Manual checks of fixed species
+to_recoversp$manual <- ifelse(is.na(to_recoversp$wanted), to_recoversp$goodr_id, to_recoversp$goodr_id)
+to_recoversp$manual[to_recoversp$wanted == "Andrena ovulata"] <- "Andrena ovatula"
+to_recoversp$manual[to_recoversp$fixed == "Osmia nuda"] <- "Osmia rufa"
+
 #need to go one by one, some ? removed,   
 #Osmia rufa                  Osmia nuda is wrong
 #But in general good job!
 
-clean_data <- merge(master, to_recover, by.x = "Pollinator_species", by.y = "mismatches", all.x = TRUE)
-clean_data$used_Gen_sp <- ifelse(is.na(clean_data$fixed), clean_data$Pollinator_species,
-                                 clean_data$fixed)
+clean_data <- merge(master, to_recoversp, by.x = "Pollinator_species", by.y = "mismatches", all.x = TRUE)
+clean_data$used_Gen_sp <- ifelse(is.na(clean_data$manual), clean_data$Pollinator_species,
+                                clean_data$fixed)
+
 #clean_data$fixed <- NULL #keep track
 #Remove non recognizes sp.
 head(clean_data)
 unmatching <- clean_data$used_Gen_sp[which(!clean_data$used_Gen_sp %in% species_tesaurus$Gen_sp)]
 #this throws out a lot of good species e.g. with subspecies in it.
 clean_data2 <- clean_data[-which(clean_data$used_Gen_sp %in% unmatching),]
+clean_data2 <- clean_data2[,-20:-22] # just to remove extra fixed columns that were redundant
 clean_data2
 head(clean_data2)
-length(unique(clean_data2$used_Gen_sp)) #792 pollinators!
+length(unique(clean_data2$used_Gen_sp)) #864 pollinators!
 
 #Can we plot it nicely?
 
